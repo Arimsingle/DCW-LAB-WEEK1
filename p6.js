@@ -4,13 +4,12 @@ const arr = [-1, -6, 10, 20, -3, 4];
 
 const minimum = arr.reduce((prev, item) => {
 
-    // if (prev < item) {
-    //     return prev
-    // } else {
-    //     return item
-    // }
-    
-    return prev+item;
+    if (prev < item) {
+        return prev
+    } else {
+        return item
+    }
+    // return prev < item ? prev : item;
 });
 
 console.log(minimum);

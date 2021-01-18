@@ -5,7 +5,7 @@ const arr = [1, 3, 4, 5, null, 2, null, -4, null];
 
 // filter วนลูปกรองค่าที่ผิดเงื่อนไขออกจากอาเรย์
 const filtered = arr.filter((item) => {
-    return item === null;
+    return item !== null;
 });
 
 console.log(filtered);

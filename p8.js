@@ -3,8 +3,8 @@
 const arr = [1, 2, 3, 4, 6, 5]
 
 
-const sorted = arr.sort((data, item) => {
-    return data-item;
+const sorted = arr.sort((a, b) => {
+    return a - b;
 });
 
 console.log(sorted);
